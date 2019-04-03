@@ -22,8 +22,8 @@ body {
   background-color:  var(--bg);
   font-size: 16px;
   /*-- uncomment for overflow fix
-  overflow-x: hidden;
-}--*/
+  overflow-x: hidden;--*/
+}
 h1 {
   font-size: 2em;
   font-family: 'Creepster', cursive;
