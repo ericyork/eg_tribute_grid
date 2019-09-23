@@ -27,9 +27,11 @@ body {
 h1 {
   font-size: 2em;
   font-family: 'Creepster', cursive;
+  color: var(--accent);
 }
 h2 {
   font-size: 1.8em;
+  font-weight: 800;
 }
 #first h2, #second h2, #third h2 {
   text-align: center;
@@ -74,7 +76,7 @@ nav a.active {
 }
 /*-- Hero Unit Styles--*/
 main {
-  padding: 2em;
+  padding: 0 2em 2em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
@@ -88,6 +90,7 @@ main {
             "img blog3 blog3"
             "res1 res2 res3";
 }
+/*-- Media Queries
 @media screen and (max-width: 767px) {
   main { grid-template-columns: 1fr;
          grid-template-areas:
@@ -106,7 +109,7 @@ main {
   .splash {display: none;}
   header {grid-template-columns: 1fr;}
   .hero-title h1, .hero-title h2 {text-align: center;}
-}
+}--*/
 header {
   grid-area: head;
   display: grid;
@@ -115,15 +118,24 @@ header {
   justify-items: center;
   align-items: center;
   padding: 2em;
+  margin-bottom: 2em;
   background-color: var(--accent);
 }
-.hero-title {
+.hero-title h1, .hero-title h2 {
   color: var(--rev-text);
 }
 .larger {
   font-family: 'Creepster', cursive;
   font-size: 5.5em;
   font-weight: 300;
+}
+.article-one, .article-two, .article-three {
+  padding: 1em 2em;
+}
+.resource-one, .resource-two, .resource-three {
+  border-top: 1px solid var(--accent);
+  padding: 2em 1em;
+  margin: 1em;
 }
 #first {grid-area: one;}
 #second {grid-area: two;}
